@@ -1,0 +1,405 @@
+*{
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.nav-1{
+  height: 50px;
+  background: #283c86;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.jtc{
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+  color: white;
+  background: #283c86;  
+background: -webkit-linear-gradient(to right, #45a247, #283c86);  
+background: linear-gradient(to right, #45a247, #283c86); 
+
+}
+.jtc2{
+  height: 60px;
+  width: auto;
+  background-color: white;
+  color: rgb(86, 86, 172);
+  cursor: pointer;
+}
+.h-para{
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.header-css{
+  background-image: url(https://ezitechsolutions.com/wp-content/uploads/2022/07/banner-bg.svg);
+  background-size: cover;
+  color: white;
+}
+.first-heading{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.front1{
+  width: 400px;
+  height: auto;
+}
+.menu a{
+  text-decoration: none;
+  color:  white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust based on how much wave area you want to cover */
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wave1 {
+  animation: waveUpDown 5s ease-in-out infinite;
+  opacity: 0.9;
+}
+
+.wave2 {
+  animation: waveUpDown 7s ease-in-out infinite;
+  opacity: 0.7;
+  transform: translateY(20%);
+}
+
+.wave3 {
+  animation: irregularWave 8s ease-in-out infinite;
+  opacity: 0.5;
+  transform: translateY(30%);
+}
+
+@keyframes waveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px); /* Adjust the movement distance */
+  }
+}
+
+@keyframes irregularWave {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(10px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(20px) rotate(-2deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(1deg);
+  }
+}
+
+.bsol{
+  font-size: smaller;
+  color: rgb(52, 52, 187);
+}
+.our-service{
+  font-size: 3rem;
+  font-weight: 600;
+}
+.ser1{
+  width: 600px;
+  height: auto;
+}
+.para3{
+font-size: 1.1rem;
+font-weight: 500;
+}
+/* .services-boxes{
+  height: 180px;
+  width: 180px;
+} */
+
+.services-boxes {
+  height: 160px;
+  width: 180px;
+  transition: transform 0.3s ease; 
+}
+
+.services-boxes:hover {
+  transform: scale(1.05); 
+}
+.icon1{
+  height: 60px;
+  width: 70px;
+
+}
+#service-1:hover{
+  background-color: #FFF1DB;
+}
+#service-2:hover{
+  background-color: #B9E5E8;
+}
+#service-3:hover{
+  background-color: #ECDFCC;
+}
+#service-4:hover{
+  background-color: #FFF1DB;
+}
+#service-5:hover{
+  background-color: #C9E9D2;
+}
+#service-6:hover{
+  background-color: #B1D690;
+}
+
+/* 
+.front-image{
+  height: 500px;
+  width: 450px;
+  background-color: rgb(78, 199, 54);
+  z-index: 3;
+  background-image: url(https://ezitechsolutions.com/wp-content/uploads/2022/07/Img.jpg);
+  background-size: cover;
+  
+
+}
+.back-moving-baloon{
+  height: 300px;
+  width: 290px;
+  background-color: red;
+  z-index: 2;
+  position: absolute;
+  left: 50px;
+} */
+
+.front-image {
+  height: 510px;
+  width: 450px;
+  background-color: rgb(78, 199, 54);
+  z-index: 3;
+  background-image: url(https://ezitechsolutions.com/wp-content/uploads/2022/07/Img.jpg);
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.back-moving-baloon {
+  height: 350px; /* Adjusted balloon height */
+  width: 390px;  /* Adjusted balloon width */
+  
+  z-index: 2;
+  position: absolute;
+  left: 50px; /* Adjust initial position as needed */
+  animation: balloonFloat 10s ease-in-out infinite; /* Added animation */
+
+ 
+    background-image: 
+      linear-gradient(
+        92deg in oklab,
+        oklch(70% 0.5 340) 25% 0%, oklch(90% 0.5 200) 100%
+      )
+   
+}
+
+@keyframes balloonFloat {
+  0%, 100% {
+      transform: translate(0, 0); /* Original position */
+  }
+  25% {
+      transform: translate(-15px, -30px); /* Move left and up */
+      width: 300px;
+      height: 220px;
+  }
+  50% {
+      transform: translate(15px, 5px); /* Move right and down */
+      width: 200px;
+      height: 300px;
+  }
+  75% {
+      transform: translate(-10px, -5px); /* Slightly adjust left and up */
+      width: 250px;
+      height: 280px;
+  }
+}
+
+.ab-str{
+  width: 200px;
+    font-weight: 600;
+    background-image: 
+      radial-gradient(
+        farthest-corner circle at top right in oklab,
+        oklch(80% 0.40 149) 29% 3%, oklch(35% .5 313) 100%
+      )
+  
+}
+.para4{
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.bar-p{
+  font-size: 1.3erm;
+  font-weight: 500;
+}
+.bg-firstbar{
+  height: 20px;
+    background-image: 
+      linear-gradient(
+        267deg in lch,
+        color(display-p3 51% 68% 100%) 36% 0%, color(display-p3 100% 95% 100%) 100%
+      )
+  
+}
+.bg-sec-bar{
+  height: 20px;
+
+  background: hsla(169, 76%, 48%, 1);
+
+background: linear-gradient(90deg, hsla(169, 76%, 48%, 1) 0%, hsla(67, 87%, 82%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(169, 76%, 48%, 1) 0%, hsla(67, 87%, 82%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(169, 76%, 48%, 1) 0%, hsla(67, 87%, 82%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1ED7B5", endColorstr="#F0F9A7", GradientType=1 );
+}
+.bg-third-bar{
+  height: 20px;
+  background-image: 
+      radial-gradient(
+        farthest-corner circle at top right in oklab,
+        oklch(80% 0.10 149) 29% 3%, oklch(35% .5 313) 100%
+      )
+}
+.ser-boxes2{
+  height: 200px;
+  width: 300px;
+
+}
+.circl-dot{
+  height: 30px;
+  width: 30px;
+  /* background-color: #B1D690; */
+  flex-shrink: 0;
+  
+}
+.dots{
+  height: 10px;
+  width: 10px;
+}
+#dot1{
+  background-color: brown;
+}
+#dot2{
+  background-color: rgb(67, 67, 192);
+}
+#dot3{
+background-color: orange;
+}
+#dot4{
+background-color: rgb(173, 114, 232);
+}
+.desc-p1 p{
+font-size: 0.9rem;
+}
+.thre-img{
+  position: relative;
+}
+.img1{
+height: 350px;
+width: 280px;
+position: absolute;
+background-color: #B1D690;
+top: 100px;
+z-index: 3;
+background-image: url(https://ezitechsolutions.com/wp-content/uploads/2022/07/1.jpg
+);
+background-size: cover;
+}
+.img2{
+height: 350px;
+width: 280px;
+position: absolute;
+background-color: #B9E5E8;
+z-index: 4;
+right: 50px;
+top: 180px;
+background-image: url(https://ezitechsolutions.com/wp-content/uploads/2022/07/2.jpg
+);
+background-size: cover;
+}
+
+
+
+.scrolling-text-container {
+  overflow: hidden; 
+  width: 100%; 
+  
+  white-space: nowrap; 
+}
+
+.scrolling-text {
+  animation: scroll-text 35s linear infinite;
+}
+
+.scrolling-text h1 {
+  display: inline-block; 
+  margin-right: 50px;
+  font-size: 2.5em; 
+  color: #333; 
+  font-weight: 700;
+}
+
+@keyframes scroll-text {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.scr-img{
+  height: 60px;
+  width: 70px;
+  
+}
+
+
+/* Bottom Scrolling Text */
+.scrolling-text-bottom {
+  display: flex;
+  animation: scroll-text-bottom 35s linear infinite;
+
+}
+.scrolling-text-bottom h1{
+font-weight: 700;
+}
+
+@keyframes scroll-text-bottom {
+  0% { transform: translateX(-100%); } /* Start from the left */
+  100% { transform: translateX(100%); } /* Move towards the right */
+}
+
+.fot-h{
+  font-size: 0.8rem;
+  font-weight: 500;
+
+}
+footer{
+  background-color: transparent;
+  background-image: linear-gradient(170deg, #2D3140 0%, #19272C 100%);
+}
+.fot-p p{
+  font-size: 1.2rem;
+font-weight: 700;
+}
